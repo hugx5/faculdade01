@@ -1,15 +1,19 @@
 package services;
 
-import notificacao.notificadorEmail;
+import notificacao.Notificador;
 import services2alga.CLIENTE;
 
 public class clienteAtivacao {
 
+	private Notificador notificador;
+	
+	public clienteAtivacao(Notificador notificador) {
+		this.notificador = notificador;
+	}
+	
 public void ativar(CLIENTE cliente) {
 	cliente.ativar();
-	notificadorEmail notificador = new notificadorEmail();
-	notificador.notificar(cliente, "seu cadastro no sistema esta ativo.");
-		
+	this.notificador.notificar(cliente, "Seu cadastro no sistema está ativo");
 
 	
 }
