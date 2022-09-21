@@ -1,0 +1,36 @@
+package services2alga;
+
+import java.math.BigDecimal;
+
+public class produto {
+
+	private String nome;
+	private BigDecimal valorTotal;
+	
+	public produto(String nome, BigDecimal valorTotal) {
+		super();
+		this.nome = nome;
+		this.valorTotal = valorTotal;
+		
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public BigDecimal getValorTotal() {
+		return valorTotal;
+	}
+
+	public void setValorTotal(BigDecimal valorTotal) {
+		this.valorTotal = valorTotal;
+	}
+
+
+
+}
+
