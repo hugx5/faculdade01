@@ -1,1 +1,1 @@
-# faculdade02
+# faculdade pequenos exercicios
